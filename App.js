@@ -3,16 +3,16 @@ import { WebView } from 'react-native-webview';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { RNCamera } from 'react-native-camera';
 
-class url extends Component {
-  render() {
-    return (
-      <WebView
-        source={{uri: 'https://github.com/facebook/react-native'}}
-        style={{marginTop: 20}}
-      />
-    );
-  }
+const url = () => {
+
+  return (
+    <WebView
+      source={{ uri: 'https://github.com/facebook/react-native' }}
+      style={{ marginTop: 20 }}
+    />
+  );
 }
+
   const barcode = () =>{
     return (
       <QRCodeScanner
